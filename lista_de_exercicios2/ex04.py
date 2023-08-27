@@ -1,0 +1,20 @@
+# 4. Crie uma classe chamada “ContaBancaria” que tenha atributos “saldo” e “titular”. Implemente 
+# métodos “depositar” e “sacar” para manipular o saldo.
+
+class ContaBancaria:
+    def depositar(saldo, titular):
+        print(f"Seu saldo é de {saldo}.")
+        return saldo, titular
+
+    def sacar(sacar, saldo, titular):
+        saldo = saldo - sacar
+        print(f"Voce sacou {sacar}.")
+        print(f"Seu novo saldo é de {saldo}.")
+        return sacar,saldo,titular
+        
+conta = ContaBancaria
+conta = ContaBancaria.depositar(1000, "Paulo")
+conta = ContaBancaria.sacar(300, 1000, "Paulo")
+
+
+print(conta)
