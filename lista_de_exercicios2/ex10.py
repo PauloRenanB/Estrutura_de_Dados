@@ -3,10 +3,10 @@
 # do funcionário.
 
 class Funcionario:
-    def aumentar_salario(nome, salario, cargo):
+    def aumentar_salario(self, nome, salario, cargo):
         aumento = salario * 0.10
         novo_salario = salario + aumento
         print(f"{nome} seu salario de {salario} foi aumentado em {aumento}, ficando assim com novo salario de {novo_salario}")
 
 func1 = Funcionario()
-func1 = Funcionario.aumentar_salario("Paulo", 3700, "Analista")
+func1.aumentar_salario("Paulo", 3700, "Analista")

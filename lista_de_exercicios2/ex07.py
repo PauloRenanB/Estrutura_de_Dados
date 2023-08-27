@@ -2,8 +2,8 @@
 # chamado “detalhes” que retorna uma string com as informações do carro
 
 class Carro:
-    def detalhes(marca, modelo, ano):
+    def detalhes(self, marca, modelo, ano):
         print(f"O carro é do modelo {modelo} da {marca}, ano {ano}")
 
-carro = Carro()
-carro = Carro.detalhes("Renault", "Kwid", 2020)
+carro1 = Carro()
+carro1.detalhes("Renault", "Kwid", 2020)

@@ -2,9 +2,9 @@
 # chamado “falar” que imprime uma mensagem com o nome da pessoa
 
 class Pessoa:
-    def falar(nome, idade):
+    def falar(self, nome, idade):
         print(f"Olá, {nome}. Você tem {idade} mesmo??")
 
 falar = Pessoa()
-falar = Pessoa.falar("Paulo Renan", 20)
+falar.falar("Paulo Renan", 20)
     

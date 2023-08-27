@@ -12,9 +12,6 @@ class ContaBancaria:
         print(f"Seu novo saldo é de {saldo}.")
         return sacar,saldo,titular
         
-conta = ContaBancaria
-conta = ContaBancaria.depositar(1000, "Paulo")
-conta = ContaBancaria.sacar(300, 1000, "Paulo")
-
-
-print(conta)
+conta1 = ContaBancaria
+conta1.depositar(1000, "Paulo")
+conta1.sacar(300, 1000, "Paulo")
